@@ -26,12 +26,12 @@ const Hero = () => {
           </h1>
           
           <div className="text-xl md:text-2xl text-gray-300 mb-8 h-8">
-            <span className="inline-block animate-fade-in">Full Stack Developer & React Specialist</span>
+            <span className="inline-block animate-fade-in">Data & DevOps Engineer</span>
           </div>
           
           <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Passionate about creating exceptional digital experiences with modern technologies. 
-            Specialized in React, Node.js, and building scalable web applications.
+            Specialized in building robust data infrastructures and scalable cloud systems. 
+            Expert in Kubernetes, Docker, Python, and big data technologies like Hadoop and Kafka.
           </p>
           
           <div className="flex justify-center gap-6 mb-12">

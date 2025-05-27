@@ -5,34 +5,18 @@ import { ExternalLink, Github, Code } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "Grafana Health Check",
+      description: "Comprehensive cluster health monitoring system developed at Derak Cloud Company. This project significantly improved system performance and stability through real-time monitoring and alerting capabilities.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+      technologies: ["Grafana", "Prometheus", "Kubernetes", "Docker", "Python"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      technologies: ["React", "TypeScript", "Socket.io", "Express"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Interactive weather dashboard with location-based forecasts, charts, and responsive design. Integrates with multiple weather APIs.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      technologies: ["React", "Chart.js", "Weather API", "Tailwind"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Social Media Analytics",
-      description: "Analytics dashboard for social media metrics with data visualization, reporting features, and export capabilities.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
-      technologies: ["Next.js", "D3.js", "PostgreSQL", "AWS"],
+      title: "Deep Learning with PyTorch for Police Force",
+      description: "Advanced machine learning solution designed for law enforcement applications. Implemented deep learning models using PyTorch for data analysis and pattern recognition to support police operations.",
+      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop",
+      technologies: ["PyTorch", "Python", "Deep Learning", "Computer Vision", "Data Analysis"],
       liveUrl: "#",
       githubUrl: "#"
     }
@@ -45,7 +29,7 @@ const Projects = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on that showcase my skills and passion for development
+            Here are some of the projects I've worked on that showcase my skills in data infrastructure and DevOps engineering
           </p>
         </div>
         

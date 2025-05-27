@@ -5,7 +5,7 @@ import { ExternalLink, Github, Code } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Grafana Health Check",
+      title: "Health Check Cluster Monitoring System",
       description: "Comprehensive cluster health monitoring system developed at Derak Cloud Company. This project significantly improved system performance and stability through real-time monitoring and alerting capabilities.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
       technologies: ["Grafana", "Prometheus", "Kubernetes", "Docker", "Python"],

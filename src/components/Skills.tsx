@@ -4,33 +4,32 @@ import React from 'react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Programming",
       skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Next.js", level: 85 },
-        { name: "Tailwind CSS", level: 92 },
-        { name: "JavaScript", level: 95 }
+        { name: "Python", level: 90 },
+        { name: "Go", level: 85 },
+        { name: "Bash Scripting", level: 88 },
+        { name: "SQL", level: 82 }
       ]
     },
     {
-      title: "Backend", 
+      title: "Big Data & Infrastructure", 
       skills: [
-        { name: "Node.js", level: 88 },
-        { name: "Express", level: 85 },
-        { name: "MongoDB", level: 82 },
-        { name: "PostgreSQL", level: 78 },
-        { name: "RESTful APIs", level: 90 }
+        { name: "Hadoop", level: 85 },
+        { name: "Kafka", level: 88 },
+        { name: "ClickHouse", level: 80 },
+        { name: "Kubernetes", level: 90 },
+        { name: "Docker", level: 92 }
       ]
     },
     {
-      title: "Tools & Others",
+      title: "DevOps & Monitoring",
       skills: [
-        { name: "Git", level: 92 },
-        { name: "Docker", level: 75 },
-        { name: "AWS", level: 70 },
-        { name: "Jest", level: 80 },
-        { name: "Figma", level: 85 }
+        { name: "Ansible", level: 85 },
+        { name: "Grafana", level: 88 },
+        { name: "Prometheus", level: 82 },
+        { name: "ELK Stack", level: 80 },
+        { name: "Minio", level: 75 }
       ]
     }
   ];
@@ -42,7 +41,7 @@ const Skills = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Skills & Expertise</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Here are the technologies and tools I work with to bring ideas to life
+            Technologies and tools I use to build robust data infrastructures and scalable cloud systems
           </p>
         </div>
         

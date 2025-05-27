@@ -1,28 +1,28 @@
 
 import React from 'react';
-import { Code, Server, Smartphone, Database } from 'lucide-react';
+import { Server, Database, Cloud, Monitor } from 'lucide-react';
 
 const About = () => {
   const highlights = [
     {
-      icon: <Code className="w-8 h-8" />,
-      title: "Frontend Development",
-      description: "Expert in React, Next.js, and modern JavaScript frameworks"
-    },
-    {
-      icon: <Server className="w-8 h-8" />,
-      title: "Backend Development", 
-      description: "Proficient in Node.js, Express, and RESTful API design"
+      icon: <Cloud className="w-8 h-8" />,
+      title: "DevOps Engineering",
+      description: "Expert in Kubernetes, Docker, and containerization for scalable deployments"
     },
     {
       icon: <Database className="w-8 h-8" />,
-      title: "Database Design",
-      description: "Experience with MongoDB, PostgreSQL, and database optimization"
+      title: "Big Data Systems", 
+      description: "Proficient in Hadoop, Kafka, ClickHouse for large-scale data processing"
     },
     {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: "Mobile Development",
-      description: "React Native and progressive web app development"
+      icon: <Server className="w-8 h-8" />,
+      title: "Cloud Infrastructure",
+      description: "Experience with cloud systems and infrastructure management at scale"
+    },
+    {
+      icon: <Monitor className="w-8 h-8" />,
+      title: "System Monitoring",
+      description: "Skilled in Grafana, Prometheus, and ELK Stack for system observability"
     }
   ];
 
@@ -37,21 +37,20 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-gray-900">
-              Passionate Developer with 5+ Years Experience
+              Data & DevOps Engineer with 2+ Years Experience
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              I'm a dedicated full-stack developer who loves creating innovative solutions 
-              and bringing ideas to life through code. My journey in web development started 
-              with a curiosity about how things work behind the scenes, and it has evolved 
-              into a passion for building exceptional user experiences.
+              An energetic Data and DevOps Engineer with over two years of experience in developing 
+              and managing data infrastructures and cloud systems. Graduated with a Master's degree 
+              in Computer Engineering from Shiraz University.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              I specialize in modern JavaScript technologies and have a strong foundation 
-              in both frontend and backend development. I believe in writing clean, 
-              maintainable code and staying up-to-date with the latest industry trends.
+              Played a key role in the Cluster Health Check project at Derak Cloud Company, which 
+              led to improved system performance and stability. Skilled in containerization and 
+              orchestration using Docker, enabling efficient deployment and scalability of applications.
             </p>
             <div className="flex flex-wrap gap-3">
-              {['React', 'Node.js', 'TypeScript', 'MongoDB', 'Express', 'Git'].map((tech) => (
+              {['Python', 'Go', 'Kubernetes', 'Docker', 'Hadoop', 'Kafka', 'ClickHouse', 'Ansible'].map((tech) => (
                 <span 
                   key={tech}
                   className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"

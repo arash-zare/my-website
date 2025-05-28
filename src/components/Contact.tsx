@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, MessageCircle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -34,19 +34,19 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      value: "arash.zare@example.com",
-      link: "mailto:arash.zare@example.com"
+      value: "arash.funlife@gmail.com",
+      link: "mailto:arash.funlife@gmail.com"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      value: "+98 912 345 6789",
-      link: "tel:+989123456789"
+      value: "+98 930 361 2266",
+      link: "tel:+989303612266"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Location",
-      value: "Tehran, Iran",
+      value: "Shiraz, Fars, Iran",
       link: null
     }
   ];
@@ -63,9 +63,9 @@ const Contact = () => {
       url: "https://linkedin.com/in/arash-zare"
     },
     {
-      icon: <Twitter className="w-6 h-6" />,
-      name: "Twitter",
-      url: "https://twitter.com/arash_zare"
+      icon: <MessageCircle className="w-6 h-6" />,
+      name: "Telegram",
+      url: "https://t.me/Arash_Xare"
     }
   ];
 
@@ -76,7 +76,7 @@ const Contact = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
+            I'm always open to discussing new opportunities, interesting projects, or just having a chat about data engineering and DevOps.
           </p>
         </div>
         

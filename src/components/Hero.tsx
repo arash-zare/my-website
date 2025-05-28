@@ -52,7 +52,7 @@ const Hero = () => {
               <Linkedin size={24} />
             </a>
             <a 
-              href="mailto:your.email@example.com"
+              href="mailto:arash.funlife@gmail.com"
               className="p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"
             >
               <Mail size={24} />

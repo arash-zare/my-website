@@ -5,39 +5,16 @@ import { Calendar, MapPin } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "Tech Innovations Inc.",
-      location: "Remote",
-      period: "2022 - Present",
-      description: "Lead development of scalable web applications using React and Node.js. Mentor junior developers and collaborate with cross-functional teams to deliver high-quality products.",
+      title: "Data Engineer",
+      company: "Derak Cloud Company",
+      location: "Shiraz, Fars, Iran",
+      period: "2022 - Present (2 years 6 months)",
+      description: "Developed and maintained data infrastructure and cloud systems at Derak Cloud Company. Specialized in building scalable data pipelines and implementing DevOps practices for improved system reliability and performance.",
       achievements: [
-        "Improved application performance by 40%",
-        "Led a team of 5 developers",
-        "Implemented CI/CD pipelines"
-      ]
-    },
-    {
-      title: "Frontend Developer",
-      company: "Digital Solutions Ltd.",
-      location: "Tehran, Iran",
-      period: "2020 - 2022",
-      description: "Developed responsive web applications using React and modern JavaScript. Worked closely with UX/UI designers to implement pixel-perfect designs.",
-      achievements: [
-        "Built 15+ responsive web applications",
-        "Reduced page load times by 60%",
-        "Introduced TypeScript to the codebase"
-      ]
-    },
-    {
-      title: "Junior Web Developer",
-      company: "StartupXYZ",
-      location: "Tehran, Iran", 
-      period: "2019 - 2020",
-      description: "Started my professional journey building websites and learning modern development practices. Gained experience in both frontend and backend technologies.",
-      achievements: [
-        "Completed 20+ client projects",
-        "Learned React and Node.js",
-        "Contributed to open-source projects"
+        "Led the Cluster Health Check project improving system performance and stability",
+        "Implemented containerization using Docker for efficient deployment and scalability",
+        "Built robust data processing pipelines using big data technologies",
+        "Managed cloud infrastructure and monitoring systems"
       ]
     }
   ];
@@ -49,7 +26,7 @@ const Experience = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Work Experience</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            My professional journey and the experiences that shaped my expertise
+            My professional journey as a Data & DevOps Engineer
           </p>
         </div>
         

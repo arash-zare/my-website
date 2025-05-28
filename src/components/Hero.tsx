@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <div className="mb-8">
             <img 
-              src="src\image\avatar.png" 
+              src="/my-website/avatar.png"
               alt="Arash Zare" 
               className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-blue-400 shadow-2xl hover:scale-105 transition-transform duration-300"
             />

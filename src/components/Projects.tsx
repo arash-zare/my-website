@@ -9,16 +9,16 @@ const Projects = () => {
       description: "Comprehensive cluster health monitoring system developed at Derak Cloud Company. This project significantly improved system performance and stability through real-time monitoring and alerting capabilities.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
       technologies: ["Grafana", "Prometheus", "Kubernetes", "Docker", "Python"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
+      githubUrl: "https://github.com/arash-zare/Cluster_Health_check"
     },
     {
       title: "Deep Learning with PyTorch for Police Force",
       description: "Advanced machine learning solution designed for law enforcement applications. Implemented deep learning models using PyTorch for data analysis and pattern recognition to support police operations.",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop",
       technologies: ["PyTorch", "Python", "Deep Learning", "Computer Vision", "Data Analysis"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+      githubUrl: "https://github.com/arash-zare/SARIMA-EE-LSTM"
     }
   ];
 
@@ -66,6 +66,8 @@ const Projects = () => {
                 <div className="flex gap-4">
                   <a 
                     href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
                   >
                     <ExternalLink size={16} />
@@ -73,6 +75,8 @@ const Projects = () => {
                   </a>
                   <a 
                     href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors duration-300"
                   >
                     <Github size={16} />

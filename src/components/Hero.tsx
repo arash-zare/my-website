@@ -44,7 +44,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a 
-              href="https://linkedin.com/in/arash-zare" 
+              href="https://www.linkedin.com/in/arash-zare-4b10b1202/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition-all duration-300 hover:scale-110"

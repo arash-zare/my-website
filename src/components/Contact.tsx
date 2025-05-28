@@ -60,7 +60,7 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/arash-zare"
+      url: "https://www.linkedin.com/in/arash-zare-4b10b1202/"
     },
     {
       icon: <MessageCircle className="w-6 h-6" />,

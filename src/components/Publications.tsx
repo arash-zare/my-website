@@ -9,7 +9,7 @@ const Publications = () => {
       journal: "Cluster Computing (Springer)",
       date: "Nov 28, 2023",
       description: "Research on optimizing service placement in container-based fog-cloud computing environments using multi-objective optimization techniques.",
-      link: "#", // Replace with actual paper link when available
+      link: "https://www.researchgate.net/publication/375991457_A_two-tier_multi-objective_service_placement_in_container-based_fog-cloud_computing_platforms", // Replace with actual paper link when available
       type: "Journal Article"
     }
   ];

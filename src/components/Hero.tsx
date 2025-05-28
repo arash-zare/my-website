@@ -26,12 +26,12 @@ const Hero = () => {
           </h1>
           
           <div className="text-xl md:text-2xl text-gray-300 mb-8 h-8">
-            <span className="inline-block animate-fade-in">Data & DevOps Engineer</span>
+            <span className="inline-block animate-fade-in">Data Infrastructure & Cloud Systems Specialist</span>
           </div>
           
           <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Specialized in building robust data infrastructures and scalable cloud systems. 
-            Expert in Kubernetes, Docker, Python, and big data technologies like Hadoop and Kafka.
+            Expert in Building Robust Data Infrastructures and Scalable Cloud Systems. 
+            Specialized in Kubernetes, Docker, Python, and big data technologies like Hadoop and Kafka.
           </p>
           
           <div className="flex justify-center gap-6 mb-12">

@@ -40,7 +40,7 @@ const About = () => {
               Data & DevOps Engineer with 3+ Years Experience
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              An energetic Data and DevOps Engineer with over two years of experience in developing 
+              An energetic Data and DevOps Engineer with over three years of experience in developing 
               and managing data infrastructures and cloud systems. Graduated with a Master's degree 
               in Computer Engineering from Shiraz University.
             </p>

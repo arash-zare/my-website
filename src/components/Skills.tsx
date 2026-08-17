@@ -26,18 +26,18 @@ const Skills = () => {
       title: "Programming & Development",
       skills: [
         { name: "Python", rating: 5, description: "Advanced proficiency in data processing and automation" },
-        { name: "Go (Golang)", rating: 4, description: "Building efficient microservices and tools" },
+        { name: "Go (Golang)", rating: 3, description: "Building efficient microservices and tools" },
         { name: "Bash Scripting", rating: 4, description: "System automation and deployment scripts" },
         { name: "SQL", rating: 4, description: "Complex queries and database optimization" },
-        { name: "JavaScript", rating: 3, description: "Frontend development and automation tools" }
+        { name: "Backend Development", rating: 3, description: "Developing robust web backends with Django and Flask" }
       ]
     },
     {
       title: "Big Data & Analytics",
       skills: [
-        { name: "Apache Hadoop", rating: 4, description: "Distributed data processing at scale" },
         { name: "Apache Kafka", rating: 5, description: "Real-time data streaming and processing" },
         { name: "ClickHouse", rating: 4, description: "High-performance analytics database" },
+        { name: "Apache Hadoop", rating: 4, description: "Distributed data processing at scale" },
         { name: "Data Pipeline Design", rating: 4, description: "ETL/ELT workflows and optimization" },
         { name: "Apache Spark", rating: 3, description: "Large-scale data processing frameworks" }
       ]
@@ -45,21 +45,21 @@ const Skills = () => {
     {
       title: "DevOps & Infrastructure",
       skills: [
-        { name: "Kubernetes", rating: 5, description: "Container orchestration and cluster management" },
         { name: "Docker", rating: 5, description: "Containerization and microservices deployment" },
-        { name: "Ansible", rating: 4, description: "Infrastructure automation and configuration" },
         { name: "GitLab CI/CD", rating: 4, description: "Continuous integration and deployment" },
+        { name: "Kubernetes", rating: 3, description: "Container orchestration and cluster management" },
+        { name: "Ansible", rating: 3, description: "Infrastructure automation and configuration" },
         { name: "Terraform", rating: 3, description: "Infrastructure as Code (IaC)" }
       ]
     },
     {
       title: "Monitoring & Observability",
       skills: [
-        { name: "Grafana", rating: 4, description: "Advanced dashboards and visualization" },
-        { name: "Prometheus", rating: 4, description: "Metrics collection and alerting" },
+        { name: "Grafana", rating: 5, description: "Advanced dashboards and visualization" },
+        { name: "Prometheus", rating: 5, description: "Metrics collection and alerting" },
+        { name: "System Monitoring", rating: 4, description: "Performance tracking and optimization" },
         { name: "ELK Stack", rating: 3, description: "Log aggregation and analysis" },
-        { name: "Minio", rating: 3, description: "Object storage and data management" },
-        { name: "System Monitoring", rating: 4, description: "Performance tracking and optimization" }
+        { name: "Minio", rating: 3, description: "Object storage and data management" }
       ]
     }
   ];

@@ -37,7 +37,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-gray-900">
-              Data & DevOps Engineer with 2+ Years Experience
+              Data & DevOps Engineer with 3+ Years Experience
             </h3>
             <p className="text-gray-600 leading-relaxed">
               An energetic Data and DevOps Engineer with over two years of experience in developing 

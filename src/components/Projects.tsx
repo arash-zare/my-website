@@ -7,7 +7,7 @@ const Projects = () => {
     {
       title: "Health Check Cluster Monitoring System",
       description: "Comprehensive cluster health monitoring system developed at Derak Cloud Company. This project significantly improved system performance and stability through real-time monitoring and alerting capabilities.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+      image: "/Health_check.jpg",
       technologies: ["Grafana", "Prometheus", "Kubernetes", "Docker", "Python"],
       liveUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
       githubUrl: "https://github.com/arash-zare/Cluster_Health_check"
@@ -15,11 +15,28 @@ const Projects = () => {
     {
       title: "Deep Learning with PyTorch for Police Force",
       description: "Advanced machine learning solution designed for law enforcement applications. Implemented deep learning models using PyTorch for data analysis and pattern recognition to support police operations.",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop",
+      image: "/police_it.jpg",
       technologies: ["PyTorch", "Python", "Deep Learning", "Computer Vision", "Data Analysis"],
       liveUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
       githubUrl: "https://github.com/arash-zare/SARIMA-EE-LSTM"
+    },
+    {
+      title: "Auto Kian - Car Dealership Platform",
+      description: "Full-featured web application for an automotive dealership with car listing management, advanced search and filtering, and dynamic content delivery built with a modular and responsive architecture.",
+      image: "/auto_kian.png",
+      technologies: ["Django", "Python", "SQLite", "HTML5", "CSS3", "JavaScript", "Bootstrap"],
+      liveUrl: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop",
+      githubUrl: "https://github.com/arash-zare/Auto-Kian"
+    },
+    {
+      title: "NetFlow & Log Forwarding Stack",
+      description: "Scalable log forwarding and network traffic monitoring pipeline. Collects system, network, and container logs using syslog-ng, processes NetFlow/sFlow/IPFIX via goflow2, and streams parsed events into RabbitMQ queues.",
+      image: "/syslog.jpg",
+      technologies: ["syslog-ng", "RabbitMQ", "goflow2", "NetFlow", "Docker", "Linux"],
+      liveUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
+      githubUrl: "https://github.com/arash-zare/syslog-ng_rabbitmq"
     }
+
   ];
 
   return (

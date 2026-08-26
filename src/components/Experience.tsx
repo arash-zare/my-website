@@ -2,8 +2,36 @@
 import React from 'react';
 import { Calendar, MapPin } from 'lucide-react';
 
+
 const Experience = () => {
   const experiences = [
+
+    {
+      title: "Freelance Software & Linux Systems Developer",
+      company: "Self-Employed / Academic Projects",
+      location: "Shiraz, Fars, Iran",
+      period: "2020 - 2022 (2 years)",
+      description: "Delivered customized web applications and system automation solutions for academic and small business clients during university studies. Focused on Python/Django backend development, Linux server administration, and task automation scripts.",
+      achievements: [
+        "Developed and deployed modular web applications using Django, Flask, and relational databases (PostgreSQL/SQLite)",
+        "Configured and maintained Linux servers (Ubuntu/CentOS), managing user permissions, SSH, Nginx reverse proxy, and system services",
+        "Automated recurring workflows, log parsing, and data collection tasks using custom Bash and Python scripts",
+        "Containerized student and client projects using Docker to ensure reproducible deployment environments"
+      ]
+    },
+       {
+      title: "Graduate Teaching Assistant (Cloud Computing)",
+      company: "Shiraz University",
+      location: "Shiraz, Fars, Iran",
+      period: "Fall 2023 (1 Semester)",
+      description: "Served as a Graduate Teaching Assistant for the advanced Cloud Computing course under the supervision of Prof. Dr. Khunjush at the Department of Computer Engineering.",
+      achievements: [
+        "Mentored and guided graduate and undergraduate students through practical cloud computing concepts, virtualization, and distributed systems",
+        "Designed and evaluated hands-on lab assignments focusing on containerization (Docker), Linux virtualization, and cloud infrastructure architectures",
+        "Conducted problem-solving sessions and technical Q&A to help students troubleshoot distributed system assignments",
+        "Assisted in grading term projects, technical reports, and final examinations"
+      ]
+  },
     {
       title: "Data Engineer",
       company: "Derak Cloud Company",

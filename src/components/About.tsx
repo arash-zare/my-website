@@ -40,25 +40,63 @@ const About = () => {
               Data & DevOps Engineer with 3+ Years Experience
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              An energetic Data and DevOps Engineer with over three years of experience in developing 
-              and managing data infrastructures and cloud systems. Graduated with a Master's degree 
-              in Computer Engineering from Shiraz University.
+              A proactive Data and DevOps Engineer with over three years of hands-on experience in 
+              architecting, automating, and maintaining scalable data platforms and cloud infrastructure. 
+              Graduated with a Master's degree in Computer Engineering from Shiraz University.
             </p>
             <p className="text-gray-600 leading-relaxed">
               Played a key role in the Cluster Health Check project at Derak Cloud Company, which 
-              led to improved system performance and stability. Skilled in containerization and 
-              orchestration using Docker, enabling efficient deployment and scalability of applications.
+              significantly improved cluster reliability and performance. Skilled in containerization, 
+              CI/CD automation, and modern data technologies including Python, Apache Kafka, and ClickHouse.
             </p>
-            <div className="flex flex-wrap gap-3">
-              {['Python', 'Go', 'Kubernetes', 'Docker', 'Hadoop', 'Kafka', 'ClickHouse', 'Ansible'].map((tech) => (
+            <p className="text-gray-600 leading-relaxed">
+              Currently open to full time, part-time freelance and contract opportunities in data engineering, 
+              infrastructure automation, and cloud solutions.
+            </p>
+
+            {/* <div className="flex flex-wrap gap-3">
+              {['Open To Work' , 'ًRemote' , 'Part-Time' , 'Project-Based' , 'Contract'].map((tech) => (
                 <span 
                   key={tech}
                   className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
                 >
+                  
                   {tech}
                 </span>
               ))}
+            </div> */}
+            <div className="flex flex-wrap items-center gap-2">
+              {/* Open to Work Badge */}
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-full border border-emerald-200 shadow-sm">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                Open to Work
+              </span>
+
+              {/* Other Tags */}
+              <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full border border-blue-200">
+                Full-Time
+              </span>
+              <span className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full border border-blue-200">
+                Remote
+              </span>
+              
+              <span className="px-3 py-1 bg-sky-50 text-sky-700 text-xs font-medium rounded-full border border-sky-200">
+                Part-Time
+              </span>
+              
+              <span className="px-3 py-1 bg-purple-50 text-purple-700 text-xs font-medium rounded-full border border-purple-200">
+                Project-Based
+              </span>
+              
+              <span className="px-3 py-1 bg-amber-50 text-amber-700 text-xs font-medium rounded-full border border-amber-200">
+                Contract
+              </span>
             </div>
+
+
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

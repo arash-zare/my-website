@@ -60,6 +60,47 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## Bilingual support (English / Persian)
+
+This site ships with a lightweight, dependency-free i18n system so it can be
+read in English or Persian (فارسی), with automatic RTL layout switching.
+
+**Structure** (`src/i18n/`):
+
+- `types.ts` — the `Translation` TypeScript interface. Both locale files must
+  satisfy it, so the compiler catches any missing or mistyped string.
+- `translations/en.ts` — all English copy.
+- `translations/fa.ts` — all Persian copy.
+- `LanguageContext.tsx` — a React context (`LanguageProvider` / `useLanguage`)
+  that holds the active language, persists the choice to `localStorage`,
+  and sets `<html lang>` / `<html dir>` (`rtl` for Persian) automatically.
+- `index.ts` — barrel export.
+
+**Usage in a component:**
+
+```tsx
+import { useLanguage } from '@/i18n';
+
+const MyComponent = () => {
+  const { t, language, toggleLanguage } = useLanguage();
+  return <h1>{t.hero.name}</h1>;
+};
+```
+
+**Adding/editing text:** update the matching key in both
+`src/i18n/translations/en.ts` and `src/i18n/translations/fa.ts`. TypeScript
+will complain if a key exists in one file but not the other.
+
+**Language switcher:** `src/components/LanguageSwitcher.tsx` renders the
+toggle button used in the navigation bar (desktop and mobile).
+
+**RTL styling:** Tailwind's built-in `rtl:`/`ltr:` variants and logical
+spacing utilities (`ms-`, `me-`, `ps-`, `pe-`, `start-`, `end-`) are used
+instead of hardcoded `ml-`/`mr-`/`left-`/`right-` wherever direction matters,
+so the layout mirrors correctly when Persian (RTL) is active. The Persian
+UI uses the "Vazirmatn" webfont, loaded in `index.html` and applied via the
+`.font-fa` class that `LanguageProvider` toggles on `<html>`.
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/fc102bb8-0edf-4ea7-be4b-661cfbd52981) and click on Share -> Publish.

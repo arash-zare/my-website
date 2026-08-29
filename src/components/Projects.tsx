@@ -1,77 +1,82 @@
-
 import React from 'react';
 import { ExternalLink, Github, Code } from 'lucide-react';
+import { useLanguage } from '@/i18n';
+
+// Non-linguistic metadata for each project (image, tech stack, links).
+// Technology names are proper nouns and are intentionally not translated.
+// Order matches the `projects.items` array in the i18n translation files.
+const projectMeta = [
+  {
+    image: '/Health_check.jpg',
+    technologies: ['Grafana', 'Prometheus', 'Kubernetes', 'Docker', 'Python'],
+    liveUrl:
+      'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop',
+    githubUrl: 'https://github.com/arash-zare/Cluster_Health_check',
+  },
+  {
+    image: '/police_it.jpg',
+    technologies: ['PyTorch', 'Python', 'Deep Learning', 'Computer Vision', 'Data Analysis'],
+    liveUrl:
+      'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop',
+    githubUrl: 'https://github.com/arash-zare/SARIMA-EE-LSTM',
+  },
+  {
+    image: '/auto_kian.png',
+    technologies: ['Django', 'Python', 'SQLite', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
+    liveUrl:
+      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop',
+    githubUrl: 'https://github.com/arash-zare/Auto-Kian',
+  },
+  {
+    image: '/syslog.jpg',
+    technologies: ['syslog-ng', 'RabbitMQ', 'goflow2', 'NetFlow', 'Docker', 'Linux'],
+    liveUrl:
+      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop',
+    githubUrl: 'https://github.com/arash-zare/syslog-ng_rabbitmq',
+  },
+];
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Health Check Cluster Monitoring System",
-      description: "Comprehensive cluster health monitoring system developed at Derak Cloud Company. This project significantly improved system performance and stability through real-time monitoring and alerting capabilities.",
-      image: "/Health_check.jpg",
-      technologies: ["Grafana", "Prometheus", "Kubernetes", "Docker", "Python"],
-      liveUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
-      githubUrl: "https://github.com/arash-zare/Cluster_Health_check"
-    },
-    {
-      title: "Deep Learning with PyTorch for Police Force",
-      description: "Advanced machine learning solution designed for law enforcement applications. Implemented deep learning models using PyTorch for data analysis and pattern recognition to support police operations.",
-      image: "/police_it.jpg",
-      technologies: ["PyTorch", "Python", "Deep Learning", "Computer Vision", "Data Analysis"],
-      liveUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
-      githubUrl: "https://github.com/arash-zare/SARIMA-EE-LSTM"
-    },
-    {
-      title: "Auto Kian - Car Dealership Platform",
-      description: "Full-featured web application for an automotive dealership with car listing management, advanced search and filtering, and dynamic content delivery built with a modular and responsive architecture.",
-      image: "/auto_kian.png",
-      technologies: ["Django", "Python", "SQLite", "HTML5", "CSS3", "JavaScript", "Bootstrap"],
-      liveUrl: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop",
-      githubUrl: "https://github.com/arash-zare/Auto-Kian"
-    },
-    {
-      title: "NetFlow & Log Forwarding Stack",
-      description: "Scalable log forwarding and network traffic monitoring pipeline. Collects system, network, and container logs using syslog-ng, processes NetFlow/sFlow/IPFIX via goflow2, and streams parsed events into RabbitMQ queues.",
-      image: "/syslog.jpg",
-      technologies: ["syslog-ng", "RabbitMQ", "goflow2", "NetFlow", "Docker", "Linux"],
-      liveUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
-      githubUrl: "https://github.com/arash-zare/syslog-ng_rabbitmq"
-    }
+  const { t } = useLanguage();
 
-  ];
+  const projects = t.projects.items.map((item, index) => ({
+    ...item,
+    ...projectMeta[index],
+  }));
 
   return (
     <section id="projects" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">{t.projects.heading}</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on that showcase my skills in data infrastructure and DevOps engineering
+            {t.projects.subheading}
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
             >
               <div className="relative overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-blue-900/20"></div>
               </div>
-              
+
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{project.title}</h3>
                 <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech, techIndex) => (
-                    <span 
+                    <span
                       key={techIndex}
                       className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium"
                     >
@@ -79,41 +84,41 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex gap-4">
-                  <a 
+                  <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
                   >
                     <ExternalLink size={16} />
-                    Live Demo
+                    {t.projects.liveDemo}
                   </a>
-                  <a 
+                  <a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors duration-300"
                   >
                     <Github size={16} />
-                    Code
+                    {t.projects.code}
                   </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
-        
+
         <div className="text-center mt-12">
-          <a 
-            href="https://github.com/arash-zare" 
-            target="_blank" 
+          <a
+            href="https://github.com/arash-zare"
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
           >
             <Code size={20} />
-            View More Projects on GitHub
+            {t.projects.viewMore}
           </a>
         </div>
       </div>

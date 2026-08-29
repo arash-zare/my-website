@@ -1,75 +1,34 @@
-
 import React from 'react';
 import { Calendar, MapPin } from 'lucide-react';
-
+import { useLanguage } from '@/i18n';
 
 const Experience = () => {
-  const experiences = [
-
-    {
-      title: "Freelance Software & Linux Systems Developer",
-      company: "Self-Employed / Academic Projects",
-      location: "Shiraz, Fars, Iran",
-      period: "2020 - 2022 (2 years)",
-      description: "Delivered customized web applications and system automation solutions for academic and small business clients during university studies. Focused on Python/Django backend development, Linux server administration, and task automation scripts.",
-      achievements: [
-        "Developed and deployed modular web applications using Django, Flask, and relational databases (PostgreSQL/SQLite)",
-        "Configured and maintained Linux servers (Ubuntu/CentOS), managing user permissions, SSH, Nginx reverse proxy, and system services",
-        "Automated recurring workflows, log parsing, and data collection tasks using custom Bash and Python scripts",
-        "Containerized student and client projects using Docker to ensure reproducible deployment environments"
-      ]
-    },
-       {
-      title: "Graduate Teaching Assistant (Cloud Computing)",
-      company: "Shiraz University",
-      location: "Shiraz, Fars, Iran",
-      period: "Fall 2023 (1 Semester)",
-      description: "Served as a Graduate Teaching Assistant for the advanced Cloud Computing course under the supervision of Prof. Dr. Khunjush at the Department of Computer Engineering.",
-      achievements: [
-        "Mentored and guided graduate and undergraduate students through practical cloud computing concepts, virtualization, and distributed systems",
-        "Designed and evaluated hands-on lab assignments focusing on containerization (Docker), Linux virtualization, and cloud infrastructure architectures",
-        "Conducted problem-solving sessions and technical Q&A to help students troubleshoot distributed system assignments",
-        "Assisted in grading term projects, technical reports, and final examinations"
-      ]
-  },
-    {
-      title: "Data Engineer",
-      company: "Derak Cloud Company",
-      location: "Shiraz, Fars, Iran",
-      period: "2022 - Present (2 years 6 months)",
-      description: "Developed and maintained data infrastructure and cloud systems at Derak Cloud Company. Specialized in building scalable data pipelines and implementing DevOps practices for improved system reliability and performance.",
-      achievements: [
-        "Led the Cluster Health Check project improving system performance and stability",
-        "Implemented containerization using Docker for efficient deployment and scalability",
-        "Built robust data processing pipelines using big data technologies",
-        "Managed cloud infrastructure and monitoring systems"
-      ]
-    }
-  ];
+  const { t } = useLanguage();
+  const experiences = t.experience.items;
 
   return (
     <section id="experience" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Work Experience</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">{t.experience.heading}</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            My professional journey as a Data & DevOps Engineer
+            {t.experience.subheading}
           </p>
         </div>
-        
+
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200 hidden md:block"></div>
-          
+          <div className="absolute start-8 top-0 bottom-0 w-0.5 bg-blue-200 hidden md:block"></div>
+
           <div className="space-y-12">
             {experiences.map((exp, index) => (
               <div key={index} className="relative flex flex-col md:flex-row gap-8">
                 {/* Timeline dot */}
-                <div className="hidden md:flex absolute left-6 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
-                
+                <div className="hidden md:flex absolute start-6 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
+
                 {/* Content */}
-                <div className="md:ml-16 bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div className="md:ms-16 bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 w-full">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-1">{exp.title}</h3>
@@ -86,11 +45,11 @@ const Experience = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <p className="text-gray-600 mb-4 leading-relaxed">{exp.description}</p>
-                  
+
                   <div className="space-y-2">
-                    <h5 className="font-semibold text-gray-900">Key Achievements:</h5>
+                    <h5 className="font-semibold text-gray-900">{t.experience.keyAchievements}</h5>
                     <ul className="space-y-1">
                       {exp.achievements.map((achievement, achievementIndex) => (
                         <li key={achievementIndex} className="flex items-start gap-2">

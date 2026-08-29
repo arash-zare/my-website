@@ -176,7 +176,7 @@ export const en: Translation = {
     heading: 'Featured Projects',
     subheading:
       "Here are some of the projects I've worked on that showcase my skills in data infrastructure and DevOps engineering",
-    liveDemo: 'Live Demo',
+    
     code: 'Code',
     viewMore: 'View More Projects on GitHub',
     items: [
@@ -186,15 +186,16 @@ export const en: Translation = {
           'Comprehensive cluster health monitoring system developed at Derak Cloud Company. This project significantly improved system performance and stability through real-time monitoring and alerting capabilities.',
       },
       {
+        title: 'Multi-Cluster Big Data CLI Automation Suite',
+        description:
+          'Modular CLI automation framework developed at Derak Cloud using Bashly and Docker Compose to streamline lifecycle management, configuration synchronization, and orchestration for ClickHouse, ELK Stack, Hadoop (HDFS/YARN), and PrestoDB clusters across dev and prod environments.',
+      },
+      {
         title: 'Deep Learning with PyTorch for Police Force',
         description:
           'Advanced machine learning solution designed for law enforcement applications. Implemented deep learning models using PyTorch for data analysis and pattern recognition to support police operations.',
       },
-      {
-        title: 'Auto Kian - Car Dealership Platform',
-        description:
-          'Full-featured web application for an automotive dealership with car listing management, advanced search and filtering, and dynamic content delivery built with a modular and responsive architecture.',
-      },
+
       {
         title: 'NetFlow & Log Forwarding Stack',
         description:

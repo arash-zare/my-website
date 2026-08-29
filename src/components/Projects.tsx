@@ -9,29 +9,38 @@ const projectMeta = [
   {
     image: '/Health_check.jpg',
     technologies: ['Grafana', 'Prometheus', 'Kubernetes', 'Docker', 'Python'],
-    liveUrl:
-      'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop',
+    // liveUrl:
+    //   'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop',
     githubUrl: 'https://github.com/arash-zare/Cluster_Health_check',
   },
+    {
+    image: '/bashly.gif',
+    technologies: [
+      'Bash',
+      'Docker Compose',
+      'ClickHouse',
+      'Elasticsearch',
+      'Apache Hadoop',
+      'PrestoDB',
+    ],
+    // liveUrl:
+    //   'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop',
+    githubUrl: 'https://github.com/arash-zare/cli_cluster_bashly',
+  },
+
   {
     image: '/police_it.jpg',
     technologies: ['PyTorch', 'Python', 'Deep Learning', 'Computer Vision', 'Data Analysis'],
-    liveUrl:
-      'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop',
+    // liveUrl:
+    //   'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop',
     githubUrl: 'https://github.com/arash-zare/SARIMA-EE-LSTM',
   },
-  {
-    image: '/auto_kian.png',
-    technologies: ['Django', 'Python', 'SQLite', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
-    liveUrl:
-      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop',
-    githubUrl: 'https://github.com/arash-zare/Auto-Kian',
-  },
+
   {
     image: '/syslog.jpg',
     technologies: ['syslog-ng', 'RabbitMQ', 'goflow2', 'NetFlow', 'Docker', 'Linux'],
-    liveUrl:
-      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop',
+    // liveUrl:
+      // 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop',
     githubUrl: 'https://github.com/arash-zare/syslog-ng_rabbitmq',
   },
 ];
@@ -86,7 +95,7 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <a
+                  {/* <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -94,7 +103,7 @@ const Projects = () => {
                   >
                     <ExternalLink size={16} />
                     {t.projects.liveDemo}
-                  </a>
+                  </a> */}
                   <a
                     href={project.githubUrl}
                     target="_blank"

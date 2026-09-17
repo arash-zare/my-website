@@ -52,7 +52,7 @@ const skillMeta = [
   {
     // DevOps & Infrastructure
     skills: [
-      { icon: SiDocker, color: '#2496ED', rating: 5 },
+      { icon: SiDocker, color: '#2496ED'},
       { icon: SiGitlab, color: '#FC6D26', rating: 5 },
       { icon: SiKubernetes, color: '#326CE5', rating: 3 },
       { icon: SiAnsible, color: '#231e1e', rating: 3 },
@@ -153,7 +153,7 @@ const Skills = () => {
                           </h4>
                         </div>
 
-                        <StarRating rating={skill.rating} />
+                        {/* <StarRating rating={skill.rating} /> */}
                       </div>
 
                       <p className="ps-[52px] text-sm leading-relaxed text-gray-600">

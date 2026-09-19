@@ -270,6 +270,25 @@ export const fa: Translation = {
     ],
   },
 
+  inProgress: {
+  heading: "در حال ساخت",
+  subheading: "پروژه‌هایی که الان روی‌شان کار می‌کنم.",
+  statusLabel: "در حال توسعه",
+  items: [
+    {
+      title: "مهندس هوش مصنوعی Agentic",
+      description:
+        "مطالعه Design Patternهای Agent های خودمختار — شامل MCP (پروتکل Model Context)، orchestration چند‌ایجنت با LangChain و LangGraph، و معماری حلقه agentic.",
+    },
+    {
+      title: "چت‌بات هوش مصنوعی Self-Hosted",
+      description:
+        "راه‌اندازی یک چت‌بات کاملاً کانتینرایز و locally-hosted با LLMهای متن‌باز — اجرا روی زیرساخت شخصی با Docker و Ollama، بدون فراخوانی API خارجی.",
+    },
+  ],
+},
+
+
   contact: {
     heading: 'تماس با من',
     subheading:

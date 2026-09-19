@@ -40,3 +40,60 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+@keyframes ai-line-flow {
+  0% { stroke-dashoffset: 100; opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { stroke-dashoffset: 0; opacity: 0.3; }
+}
+
+@keyframes ai-orbit-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes ai-glow-pulse {
+  0%, 100% { opacity: 0.4; r: 18; }
+  50% { opacity: 0.9; r: 22; }
+}
+
+@keyframes ai-node-appear {
+  0%, 100% { opacity: 0.6; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.ai-banner-line {
+  stroke-dasharray: 100;
+  animation: ai-line-flow 3s ease-in-out infinite;
+}
+
+.ai-banner-orbit {
+  transform-origin: 120px 90px;
+  animation: ai-orbit-spin 12s linear infinite;
+}
+
+.ai-banner-glow {
+  animation: ai-glow-pulse 2s ease-in-out infinite;
+}
+
+.ai-banner-core {
+  animation: ai-glow-pulse 1.5s ease-in-out infinite;
+}
+
+.ai-banner-node {
+  animation: ai-node-appear 2.5s ease-in-out infinite;
+}
+
+.ai-banner-node-delay-1 {
+  animation: ai-node-appear 2.5s ease-in-out infinite 0.5s;
+}
+
+.ai-banner-node-delay-2 {
+  animation: ai-node-appear 2.5s ease-in-out infinite 1s;
+}
+
+.ai-banner-node-delay-3 {
+  animation: ai-node-appear 2.5s ease-in-out infinite 1.5s;
+}

@@ -16,9 +16,11 @@ export interface SkillCategory {
   skills: SkillItem[];
 }
 
-export interface ProjectItem {
+export interface InProgressItem {
   title: string;
   description: string;
+  tags?: string[];
+  link?: string;
 }
 
 export interface ExperienceItem {
@@ -92,6 +94,15 @@ export interface Translation {
     categories: SkillCategory[];
     footerNote: string;
   };
+
+
+inProgress: {
+  heading: string;
+  subheading: string;
+  statusLabel: string;
+  items: InProgressItem[];
+};
+
 
   projects: {
     heading: string;

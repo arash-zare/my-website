@@ -8,6 +8,11 @@ import Publications from '../components/Publications';
 import Experience from '../components/Experience';
 import Contact from '../components/Contact';
 import { useLanguage } from '@/i18n';
+import InProgress from "@/components/InProgress";
+
+// بعد داخل JSX، بین Publications و Experience:
+
+
 
 const Index = () => {
   const { t } = useLanguage();
@@ -28,6 +33,7 @@ const Index = () => {
       <Hero />
       <About />
       <Skills />
+      <InProgress />
       <Projects />
       <Publications />
       <Experience />

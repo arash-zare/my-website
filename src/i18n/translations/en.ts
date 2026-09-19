@@ -271,6 +271,29 @@ export const en: Translation = {
     ],
   },
 
+
+  inProgress: {
+    heading: "In Progress",
+    subheading: "Projects I'm actively building right now.",
+    statusLabel: "in progress",
+    items: [
+    {
+      title: "Agentic AI Engineer",
+      description:
+        "Studying design patterns for autonomous agents — including MCP (Model Context Protocol), multi-agent orchestration with LangChain & LangGraph, and agentic loop architecture.",
+      tags: ["Reflection" , "Tool Use","MCP", "LangChain", "LangGraph"],
+      // link: "https://github.com/arash-zare",
+    },
+    {
+      title: "Self-Hosted AI Chatbot",
+      description:
+        "Setting up a fully containerized, locally-hosted chatbot using open-source LLMs — running entirely on my own infrastructure with Docker and Ollama, no external API calls.",
+      tags: ["Python" , "Ollama" , "docker" ],
+      link: "https://github.com/arash-zare",
+    },
+    ],
+  },
+
   contact: {
     heading: 'Get In Touch',
     subheading:

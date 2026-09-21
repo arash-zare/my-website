@@ -2,9 +2,9 @@ import type { Translation } from '../types';
 
 export const en: Translation = {
   meta: {
-    title: 'Arash Zare - Data Infrastructure & Cloud Systems Specialist',
+    title: 'Arash Zare - Data Engineer & Observability Specialist',
     description:
-      'Professional portfolio of Arash Zare - Data Infrastructure & Cloud Systems Specialist expert in building robust data infrastructures and scalable cloud systems',
+      'Professional portfolio of Arash Zare, a Data Engineer focused on monitoring and observability (Grafana, Prometheus) with hands-on experience in data engineering tools and containerized systems',
   },
 
   nav: {
@@ -20,19 +20,19 @@ export const en: Translation = {
 
   hero: {
     name: 'Arash Zare',
-    role: 'Data & DevOps Engineer',
+    role: 'Data Engineer & Observability Specialist',
     tagline:
-      'Building reliable data pipelines, automated infrastructure, and scalable cloud systems. Specialized in Python, Docker, Apache Kafka, and Kubernetes.',
+      'Building reliable data pipelines and clear system observability with Python, Docker, Kubernetes, CI/CD, Apache Kafka, Grafana, and Prometheus — currently expanding into Agentic AI engineering.',
     viewWork: 'View My Work',
     getInTouch: 'Get In Touch',
   },
 
   about: {
     heading: 'About Me',
-    subheading: 'Data & DevOps Engineer with 3+ Years Experience',
+    subheading: 'Focused on Data Engineering and System Observability',
     paragraphs: [
-      "A proactive Data and DevOps Engineer with over three years of hands-on experience in architecting, automating, and maintaining scalable data platforms and cloud infrastructure. Graduated with a Master's degree in Computer Engineering from Shiraz University.",
-      'Played a key role in the Cluster Health Check project at Derak Cloud Company, which significantly improved cluster reliability and performance. Skilled in containerization, CI/CD automation, and modern data technologies including Python, Apache Kafka, and ClickHouse.',
+      "A proactive Data Engineer with over 3 years of hands-on experience working with data engineering tools, containerized services using Docker and Docker Compose, and Kubernetes-based deployments with CI/CD pipelines. Strong focus on system monitoring and observability with Grafana and Prometheus. Graduated with a Master's degree in Computer Engineering from Shiraz University.",
+      'Played a key role in the Cluster Health Check project at Derak Cloud Company, building monitoring and alerting pipelines that significantly improved cluster reliability and visibility. Currently expanding into Agentic AI engineering, designing autonomous AI agents and automated workflows.',
       'Currently open to full time, part-time freelance and contract opportunities in data engineering, infrastructure automation, and cloud solutions.',
     ],
     badges: {
@@ -45,20 +45,20 @@ export const en: Translation = {
     },
     highlights: [
       {
-        title: 'DevOps Engineering',
-        description: 'Expert in Kubernetes, Docker, and containerization for scalable deployments',
+        title: 'Containerized Deployments',
+        description: 'Deploying and managing services with Docker and Docker Compose',
       },
       {
-        title: 'Big Data Systems',
-        description: 'Proficient in Hadoop, Kafka, ClickHouse for large-scale data processing',
+        title: 'Data Engineering',
+        description: 'Working with Kafka, ClickHouse, and Hadoop for large-scale data pipelines',
       },
       {
-        title: 'Cloud Infrastructure',
-        description: 'Experience with cloud systems and infrastructure management at scale',
+        title: 'Infrastructure & Automation',
+        description: 'Deploying with Kubernetes and building CI/CD pipelines',
       },
       {
-        title: 'System Monitoring',
-        description: 'Skilled in Grafana, Prometheus, and ELK Stack for system observability',
+        title: 'Monitoring & Observability',
+        description: 'Strong focus on Grafana and Prometheus for real-time system observability',
       },
     ],
   },

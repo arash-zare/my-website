@@ -31,12 +31,13 @@ export const en: Translation = {
     heading: 'About Me',
     subheading: 'Focused on Data Engineering and System Observability',
     paragraphs: [
-      "A proactive Data Engineer with over 3 years of hands-on experience working with data engineering tools, containerized services using Docker and Docker Compose, and Kubernetes-based deployments with CI/CD pipelines. Strong focus on system monitoring and observability with Grafana and Prometheus. Graduated with a Master's degree in Computer Engineering from Shiraz University.",
+      "A proactive Data Engineer with over 4 years of hands-on experience working with data engineering tools, containerized services using Docker and Docker Compose, and Kubernetes-based deployments with CI/CD pipelines. Strong focus on system monitoring and observability with Grafana and Prometheus. Graduated with a Master's degree in Computer Engineering from Shiraz University.",
       'Played a key role in the Cluster Health Check project at Derak Cloud Company, building monitoring and alerting pipelines that significantly improved cluster reliability and visibility. Currently expanding into Agentic AI engineering, designing autonomous AI agents and automated workflows.',
       'Currently open to full time, part-time freelance and contract opportunities in data engineering, infrastructure automation, and cloud solutions.',
     ],
     badges: {
-      openToWork: 'Open to Work',
+      // openToWork: 'Open to Work',
+      openToWork: 'Currently at Khedmat Az Ma',
       fullTime: 'Full-Time',
       remote: 'Remote',
       partTime: 'Part-Time',
@@ -226,32 +227,20 @@ export const en: Translation = {
     subheading: 'My professional journey as a Data & DevOps Engineer',
     keyAchievements: 'Key Achievements:',
     items: [
-      {
-        title: 'Freelance Software & Linux Systems Developer',
-        company: 'Self-Employed / Academic Projects',
+            {
+        title: 'DevOps Engineer',
+        company: 'Khedmat Az Ma',
         location: 'Shiraz, Fars, Iran',
-        period: '2020 - 2022 (2 years)',
+        period: 'Present-2026',
         description:
-          'Delivered customized web applications and system automation solutions for academic and small business clients during university studies. Focused on Python/Django backend development, Linux server administration, and task automation scripts.',
+          'Responsible for designing, securing, and maintaining core infrastructure to achieve high availability and low latency across marketplace services. Working directly with the CTO to implement automated CI/CD workflows, web server/runtime performance tuning, multi-CDN caching strategies, and end-to-end observability.',
         achievements: [
-          'Developed and deployed modular web applications using Django, Flask, and relational databases (PostgreSQL/SQLite)',
-          'Configured and maintained Linux servers (Ubuntu/CentOS), managing user permissions, SSH, Nginx reverse proxy, and system services',
-          'Automated recurring workflows, log parsing, and data collection tasks using custom Bash and Python scripts',
-          'Containerized student and client projects using Docker to ensure reproducible deployment environments',
-        ],
-      },
-      {
-        title: 'Graduate Teaching Assistant (Cloud Computing)',
-        company: 'Shiraz University',
-        location: 'Shiraz, Fars, Iran',
-        period: 'Fall 2023 (1 Semester)',
-        description:
-          'Served as a Graduate Teaching Assistant for the advanced Cloud Computing course under the supervision of Prof. Dr. Khunjush at the Department of Computer Engineering.',
-        achievements: [
-          'Mentored and guided graduate and undergraduate students through practical cloud computing concepts, virtualization, and distributed systems',
-          'Designed and evaluated hands-on lab assignments focusing on containerization (Docker), Linux virtualization, and cloud infrastructure architectures',
-          'Conducted problem-solving sessions and technical Q&A to help students troubleshoot distributed system assignments',
-          'Assisted in grading term projects, technical reports, and final examinations',
+          'Engineered and maintained automated CI/CD pipelines using Jenkins and Docker to streamline deployments and automated testing across production and staging environments',
+          'Configured and fine-tuned multi-CDN caching rules, NGINX reverse proxies, and load balancers to minimize request latency and boost overall application throughput',
+          'Optimized Linux server environments and runtime configurations for PHP-FPM and Python services, significantly enhancing stability under high concurrent traffic',
+          'Established full-stack monitoring, dashboarding, and alerting solutions using Prometheus, Node Exporter, and Grafana for proactive server health and performance tracking',
+          'Monitored, fine-tuned, and troubleshot relational databases (PostgreSQL, MySQL), optimizing slow queries, connection pooling, and routine backup/recovery strategies',
+          'Automated server provisioning, backup workflows, and routine system administration tasks using custom Bash and Python scripts',
         ],
       },
       {
@@ -268,10 +257,38 @@ export const en: Translation = {
           'Managed cloud infrastructure and monitoring systems',
         ],
       },
+      {
+        title: 'Graduate Teaching Assistant (Cloud Computing)',
+        company: 'Shiraz University',
+        location: 'Shiraz, Fars, Iran',
+        period: 'Fall 2023 (1 Semester)',
+        description:
+          'Served as a Graduate Teaching Assistant for the advanced Cloud Computing course under the supervision of Prof. Dr. Khunjush at the Department of Computer Engineering.',
+          achievements: [
+          'Mentored and guided graduate and undergraduate students through practical cloud computing concepts, virtualization, and distributed systems',
+          'Designed and evaluated hands-on lab assignments focusing on containerization (Docker), Linux virtualization, and cloud infrastructure architectures',
+          'Conducted problem-solving sessions and technical Q&A to help students troubleshoot distributed system assignments',
+          'Assisted in grading term projects, technical reports, and final examinations',
+        ],
+      },
+      {
+        title: 'Freelance Software & Linux Systems Developer',
+        company: 'Self-Employed / Academic Projects',
+        location: 'Shiraz, Fars, Iran',
+        period: '2020 - 2022 (2 years)',
+        description:
+          'Delivered customized web applications and system automation solutions for academic and small business clients during university studies. Focused on Python/Django backend development, Linux server administration, and task automation scripts.',
+        achievements: [
+          'Developed and deployed modular web applications using Django, Flask, and relational databases (PostgreSQL/SQLite)',
+          'Configured and maintained Linux servers (Ubuntu/CentOS), managing user permissions, SSH, Nginx reverse proxy, and system services',
+          'Automated recurring workflows, log parsing, and data collection tasks using custom Bash and Python scripts',
+          'Containerized student and client projects using Docker to ensure reproducible deployment environments',
+        ],
+      },
     ],
   },
-
-
+  
+  
   inProgress: {
     heading: "In Progress",
     subheading: "Projects I'm actively building right now.",
@@ -282,7 +299,7 @@ export const en: Translation = {
       description:
         "Studying design patterns for autonomous agents — including MCP (Model Context Protocol), multi-agent orchestration with LangChain & LangGraph, and agentic loop architecture.",
       tags: ["Reflection" , "Tool Use","MCP", "LangChain", "LangGraph"],
-      // link: "https://github.com/arash-zare",
+      link: "https://github.com/arash-zare/Enterprise-RAG-Observability",
     },
     {
       title: "Self-Hosted AI Chatbot",

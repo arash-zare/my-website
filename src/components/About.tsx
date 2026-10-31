@@ -18,10 +18,10 @@ const About = () => {
 
   const badgeTags = [
     { label: t.about.badges.fullTime, className: 'bg-blue-50 text-blue-700 border-blue-200' },
-    { label: t.about.badges.remote, className: 'bg-blue-50 text-blue-700 border-blue-200' },
-    { label: t.about.badges.partTime, className: 'bg-sky-50 text-sky-700 border-sky-200' },
-    { label: t.about.badges.projectBased, className: 'bg-purple-50 text-purple-700 border-purple-200' },
-    { label: t.about.badges.contract, className: 'bg-amber-50 text-amber-700 border-amber-200' },
+  //   { label: t.about.badges.remote, className: 'bg-blue-50 text-blue-700 border-blue-200' },
+  //   { label: t.about.badges.partTime, className: 'bg-sky-50 text-sky-700 border-sky-200' },
+  //   { label: t.about.badges.projectBased, className: 'bg-purple-50 text-purple-700 border-purple-200' },
+  //   { label: t.about.badges.contract, className: 'bg-amber-50 text-amber-700 border-amber-200' },
   ];
 
   return (
@@ -52,8 +52,6 @@ const About = () => {
                 </span>
                 {t.about.badges.openToWork}
               </span>
-
-              {/* Other Tags */}
               {badgeTags.map((tag) => (
                 <span
                   key={tag.label}
@@ -63,8 +61,9 @@ const About = () => {
                 </span>
               ))}
             </div>
-          </div>
 
+            
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {highlights.map((item, index) => (
               <div

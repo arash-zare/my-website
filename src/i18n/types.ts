@@ -55,6 +55,7 @@ export interface Translation {
   };
 
   nav: {
+    logo: string,
     home: string;
     about: string;
     skills: string;

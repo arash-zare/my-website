@@ -35,16 +35,32 @@ const Navigation = () => {
     setIsOpen(false);
   };
 
-  return (
+  // return (
+  //   <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+  //     isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+  //   }`}>
+  //     <div className="container mx-auto px-6">
+  //       <div className="flex items-center justify-between h-16">
+  //         <div className="text-xl font-bold">
+  //           <span className={`transition-colors ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
+  //             {t.nav.logo}
+  //           </span>
+  //         </div>
+    return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <div className="text-xl font-bold">
-            <span className={`transition-colors ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-              {t.hero.name}
-            </span>
+          {/* بخش لوگو با تگ img */}
+          <div className="flex items-center">
+            <a href="#home" className="flex items-center gap-2">
+              <img
+                src={t.nav.logo}
+                alt="Logo"
+                className="h-16 w-auto object-contain transition-transform duration-200 hover:scale-105"
+              />
+            </a>
           </div>
 
           {/* Desktop Navigation */}

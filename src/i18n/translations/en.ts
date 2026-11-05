@@ -2,12 +2,13 @@ import type { Translation } from '../types';
 
 export const en: Translation = {
   meta: {
-    title: 'Arash Zare - Data Engineer & Observability Specialist',
+    title: 'Arash Zare - Data Engineer | DevOps',
     description:
       'Professional portfolio of Arash Zare, a Data Engineer focused on monitoring and observability (Grafana, Prometheus) with hands-on experience in data engineering tools and containerized systems',
   },
 
   nav: {
+    logo: "/logo.png",
     home: 'Home',
     about: 'About',
     skills: 'Skills',
@@ -17,10 +18,10 @@ export const en: Translation = {
     contact: 'Contact',
     langSwitchLabel: 'فارسی',
   },
-
+  
   hero: {
     name: 'Arash Zare',
-    role: 'Data Engineer & Observability Specialist',
+    role: 'Data Engineer | DevOps',
     tagline:
       'Building reliable data pipelines and clear system observability with Python, Docker, Kubernetes, CI/CD, Apache Kafka, Grafana, and Prometheus — currently expanding into Agentic AI engineering.',
     viewWork: 'View My Work',
@@ -33,7 +34,6 @@ export const en: Translation = {
     paragraphs: [
       "A proactive Data Engineer with over 4 years of hands-on experience working with data engineering tools, containerized services using Docker and Docker Compose, and Kubernetes-based deployments with CI/CD pipelines. Strong focus on system monitoring and observability with Grafana and Prometheus. Graduated with a Master's degree in Computer Engineering from Shiraz University.",
       'Played a key role in the Cluster Health Check project at Derak Cloud Company, building monitoring and alerting pipelines that significantly improved cluster reliability and visibility. Currently expanding into Agentic AI engineering, designing autonomous AI agents and automated workflows.',
-      'Currently open to full time, part-time freelance and contract opportunities in data engineering, infrastructure automation, and cloud solutions.',
     ],
     badges: {
       // openToWork: 'Open to Work',
